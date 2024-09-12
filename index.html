@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
+
+</head>
+<body>
+  <h4 class="title">SPLI<br>TTER</h4>
+  <div class="main-div">
+    <div class="div-1">
+      <label for="total-bill">Bill</label><br>
+      <div class="input-container">
+        <img src="images/icon-dollar.svg" alt="dollar">
+        <input type="number" id="total-bill" placeholder="0">
+      </div>
+      <div class="tip-container">
+        <label>Select Tip %</label>
+        <div class="tip-buttons">
+          <button type="radio" class="tip-btn" data-value="5">5%</button>
+          <button type="radio" class="tip-btn" data-value="10">10%</button>
+          <button type="radio" class="tip-btn" data-value="15">15%</button>
+          <button type="radio" class="tip-btn" data-value="25">25%</button>
+          <button type="radio" class="tip-btn" data-value="50">50%</button>
+          <input type="number" placeholder="Custom" id="custom-tip">
+        </div>
+      </div>
+      <div class="number-people">
+        <label for="n-people">Number of People</label>
+        <p id="error-msg">Can't be zero</p>
+      </div>
+      <div class="input-container">
+        <img src="images/icon-person.svg" alt="person">
+        <input type="number" id="n-people" placeholder="0">
+      </div>
+    </div>  
+    <div class="div-2">
+      <div class="sec-0">
+        <div class="sec-1">
+          <h3>Tip Amount</h3>
+          <p>/ person</p>
+        </div>
+        <h1 id="tip-amount">$0.00</h1>
+      </div>
+      <div class="sec-0">
+        <div class="sec-1">
+          <h3>Total</h3>
+          <p>/ person</p>
+        </div>
+        <h1 id="total">$0.00</h1>
+      </div>
+      <button id="reset">RESET</button>
+    </div>  
+  </div> 
+</body>
+</html>
